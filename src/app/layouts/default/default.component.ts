@@ -1,24 +1,18 @@
-import { Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { GradientComponent } from "./gradient.component";
-import { SidebarComponent } from "./sidebar.component";
+import { RouterOutlet } from "@angular/router";
 
 @Component({
   selector: "app-default",
-  imports: [SidebarComponent, GradientComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [RouterOutlet, GradientComponent],
   host: {
     class: "flex h-screen",
   },
   template: `
-    <app-sidebar />
-    <article
-      class="relative z-10 bg-chat-background flex-1 mt-3.5 p-4 bg-[url(/noise.png)] border-l border-t border-chat-border rounded-tl-xl"
-    >
-      <ng-content />
-    </article>
-
-    <!-- <router-outlet /> -->
+    <router-outlet />
     <app-gradient />
   `,
   styles: [],
 })
-export class DefaultComponent {}
+export default class DefaultComponent {}

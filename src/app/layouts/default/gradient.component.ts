@@ -1,7 +1,8 @@
-import { Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 
 @Component({
   selector: "app-gradient",
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   host: {
     class: "absolute inset-0 dark:bg-sidebar z-0",

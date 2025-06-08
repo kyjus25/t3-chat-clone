@@ -1,10 +1,11 @@
-import { Component } from "@angular/core";
-import { DefaultComponent } from "./layouts/default/default.component";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
 
 @Component({
   selector: "app-root",
-  imports: [DefaultComponent],
-  template: ` <app-default> Hello world?</app-default> `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [RouterOutlet],
+  template: ` <router-outlet /> `,
   styles: [],
 })
 export class AppComponent {}

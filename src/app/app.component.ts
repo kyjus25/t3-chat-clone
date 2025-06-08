@@ -1,16 +1,10 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from "@angular/core";
+import { DefaultComponent } from "./layouts/default/default.component";
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
+  selector: "app-root",
+  imports: [DefaultComponent],
+  template: ` <app-default> Hello world?</app-default> `,
   styles: [],
 })
-export class AppComponent {
-  title = 't3-chat';
-}
+export class AppComponent {}

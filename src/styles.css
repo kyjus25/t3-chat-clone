@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(313.8 24.5% 10.4%);
+  --color-foreground: hsl(270 20% 97.8%);
+  --color-card: hsl(300 15.8% 3.7%);
+  --color-card-foreground: hsl(240 4.8% 95.9%);
+  --color-popover: hsl(320 23.08% 5.1%);
+  --color-popover-foreground: hsl(326 33% 96%);
+  --color-primary: hsl(332 100% 32%);
+  --color-primary-foreground: hsl(326 85% 90%);
+  --color-secondary: hsl(273.8 15.1% 20.8%);
+  --color-secondary-foreground: hsl(270 30% 83%);
+  --color-muted: hsl(283 9% 25%);
+  --color-muted-foreground: hsl(326 33% 86%);
+  --color-accent: hsl(272 20% 27%);
+  --color-accent-foreground: hsl(326 33% 96%);
+  --color-destructive: hsl(335.82 74.44% 35.29%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+  --color-border: hsl(262.5 10% 15.7%);
+  --color-input: hsl(326.3 20% 15.7%);
+  --color-ring: hsl(333.3 71.4% 50.6%);
+
+  --color-chart-1: hsl(220 70% 50%);
+  --color-chart-2: hsl(160 60% 45%);
+  --color-chart-3: hsl(30 80% 55%);
+  --color-chart-4: hsl(280 65% 60%);
+  --color-chart-5: hsl(340 75% 55%);
+
+  --color-sidebar-background: hsl(240 2.6% 7.6%);
+  --color-sidebar-foreground: hsl(240 4.8% 95.9%);
+  --color-sidebar-primary: hsl(224.3 76.3% 48%);
+  --color-sidebar-primary-foreground: hsl(0 0% 100%);
+  --color-sidebar-accent: hsl(318.5 20.6% 12.4%);
+  --color-sidebar-accent-foreground: hsl(240 4.8% 95.9%);
+  --color-sidebar-border: hsl(0 0% 0%);
+  --color-sidebar-ring: hsl(333.3 71.4% 50.6%);
+
+  --color-gradient-noise-top: hsl(309 15% 9%);
+  --color-heading: hsl(328.2 45.9% 57.3%);
+  --color-chat-border: hsl(333.3 22% 16.1%);
+  --color-chat-background: hsl(270 16.13% 12.16%);
+  --color-chat-accent: rgba(25, 21, 30, 0.86);
+  --color-chat-input-gradient: hsl(289 23% 23%);
+  --color-chat-input-background: hsla(270, 10%, 20%, var(--blur-fallback, 0.4));
+  --color-chat-overlay: hsla(270, 12%, 16%, var(--blur-fallback, 0.71));
+  --color-wordmark: #e3bad1;
+}
